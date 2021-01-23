@@ -36,8 +36,9 @@ let colourFlag = 0
 let rainbowFlag = 0
 rainbowFlag = 1
 colourFlag = 0
-tileDisplay.setBrightness(128)
+
 tileDisplay = Kitronik_Zip_Tile.createZIPTileDisplay(1, 1, Kitronik_Zip_Tile.UBitLocations.Visible)
+tileDisplay.setBrightness(128)
 tileDisplay.showRainbow(1, 360)
 tileDisplay.show()
 basic.forever(function () {
